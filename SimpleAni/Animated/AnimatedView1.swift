@@ -16,7 +16,7 @@ struct AnimatedView1: View {
 
                         AnimatedCouponView(
                             title: "$1 REWARD!",
-                            details: "Act now to save $1.00 on your next online order.",
+                            details: "Act now to save $1.00.",
                             animation: animation
                         )
                         .onTapGesture {

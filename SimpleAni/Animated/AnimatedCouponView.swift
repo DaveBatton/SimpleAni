@@ -6,7 +6,7 @@ struct AnimatedCouponView: View {
     let animation: Namespace.ID
 
     var body: some View {
-        CardView(strokeStyle: StrokeStyle(lineWidth: 4, dash: [20]), animation: animation) {
+        AnimatedCardView(strokeStyle: StrokeStyle(lineWidth: 4, dash: [20]), animation: animation) {
             VStack {
                 Text(title)
                     .font(.largeTitle.bold())
@@ -15,11 +15,10 @@ struct AnimatedCouponView: View {
                     .background(.red)
                     .matchedGeometryEffect(id: "coupon-divider", in: animation)
                 Text(details)
-                    .frame(maxWidth: .infinity, alignment: .topLeading)
                     .matchedGeometryEffect(id: "coupon-details", in: animation)
             }
             .padding()
-            .background(.teal.opacity(0.4))
+            .background(.teal.opacity(0.3))
         }
         .matchedGeometryEffect(id: "coupon-card", in: animation)
     }
@@ -27,7 +26,7 @@ struct AnimatedCouponView: View {
 
 #Preview {
     @Namespace var animation
-    return CouponView(
+    return AnimatedCouponView(
         title: "Save 10%!",
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", animation: animation
     )

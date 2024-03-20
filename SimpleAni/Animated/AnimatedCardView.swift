@@ -2,8 +2,9 @@
 
 import SwiftUI
 
-struct CardView<Content>: View where Content: View {
+struct AnimatedCardView<Content>: View where Content: View {
     var strokeStyle: StrokeStyle = StrokeStyle(lineWidth: 0)
+    let animation: Namespace.ID
     @ViewBuilder var content: Content
 
     var body: some View {
@@ -12,21 +13,25 @@ struct CardView<Content>: View where Content: View {
                 .overlay {
                     RoundedRectangle(cornerRadius: 24)
                         .strokeBorder(style: strokeStyle)
+                        .matchedGeometryEffect(id: "card-stroke", in: animation)
                 }
         }
         .background(Color(UIColor.systemGray6))
         .mask {
             RoundedRectangle(cornerRadius: 24)
+                .matchedGeometryEffect(id: "card-mask", in: animation)
         }
         .shadow(radius: 17, y: 7)
     }
 }
 
-#Preview("CardView") {
+#Preview("AnimatedCardView") {
+    @Namespace var animation
+
     return ScrollView {
         VStack(spacing: 20) {
 
-            CardView() {
+            AnimatedCardView(animation: animation) {
                 VStack {
                     Text("Card 1")
                         .font(.title.bold())
@@ -35,20 +40,20 @@ struct CardView<Content>: View where Content: View {
                 .padding()
             }
 
-            CardView() {
+            AnimatedCardView(animation: animation) {
                 VStack {
                     Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Text("Card 2")
                         .font(.headline)
-                        .foregroundStyle(.white)
                         .frame(maxWidth: .infinity, alignment: .trailing)
+                        .foregroundStyle(.white)
                 }
                 .padding()
                 .background(.orange)
             }
 
-            CardView(strokeStyle: StrokeStyle(lineWidth: 2)) {
+            AnimatedCardView(strokeStyle: StrokeStyle(lineWidth: 2), animation: animation) {
                 VStack {
                     Text("Card 3")
                         .font(.title.bold())

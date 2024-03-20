@@ -6,12 +6,12 @@ struct CouponView: View {
     let animation: Namespace.ID
 
     var body: some View {
-        CardView(strokeStyle: StrokeStyle(lineWidth: 4, dash: [20]), animation: animation) {
+        CardView(strokeStyle: StrokeStyle(lineWidth: 4, dash: [20])) {
             VStack {
                 Text(title)
                     .font(.largeTitle.bold())
                 Divider()
-                    .background(.red)
+                    .overlay(.red)
                 Text(details)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }

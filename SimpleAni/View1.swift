@@ -17,7 +17,7 @@ struct View1: View {
                     } label: {
                         CouponView(
                             title: "$1 REWARD!",
-                            details: "Act now to save $1.00 on your next online order.",
+                            details: "Act now to save $1.00.",
                             animation: animation
                         )
                     }
@@ -36,9 +36,5 @@ struct View1: View {
 }
 
 #Preview("Portrait") {
-    View1()
-}
-
-#Preview("Landscape", traits: .landscapeLeft) {
     View1()
 }

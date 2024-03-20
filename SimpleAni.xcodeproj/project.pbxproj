@@ -18,6 +18,7 @@
 		55B934452B4EE71B004A0E96 /* AnimatedView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B934442B4EE71B004A0E96 /* AnimatedView1.swift */; };
 		55B934472B4EE9DF004A0E96 /* AnimatedView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B934462B4EE9DF004A0E96 /* AnimatedView2.swift */; };
 		55B9344B2B4EED06004A0E96 /* AnimatedCouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9344A2B4EED06004A0E96 /* AnimatedCouponView.swift */; };
+		569766C92BAB61E8003B86B2 /* AnimatedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569766C82BAB61E8003B86B2 /* AnimatedCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +29,12 @@
 		552BA4902B4EBECC00DFAEF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		552BA4972B4EBF6900DFAEF2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		552BA4992B4EC31700DFAEF2 /* CouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponView.swift; sourceTree = "<group>"; };
-		552BA49B2B4EC50100DFAEF2 /* ThingsToDemo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ThingsToDemo.md; sourceTree = "<group>"; };
 		552BA49C2B4EE2DB00DFAEF2 /* View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
 		559F0B1C2B4EF58A00D9DD2D /* EnvironmentValues+Namespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Namespace.swift"; sourceTree = "<group>"; };
 		55B934442B4EE71B004A0E96 /* AnimatedView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedView1.swift; sourceTree = "<group>"; };
 		55B934462B4EE9DF004A0E96 /* AnimatedView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedView2.swift; sourceTree = "<group>"; };
 		55B9344A2B4EED06004A0E96 /* AnimatedCouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCouponView.swift; sourceTree = "<group>"; };
+		569766C82BAB61E8003B86B2 /* AnimatedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +75,6 @@
 				559F0B1E2B4EF59600D9DD2D /* Animated */,
 				552BA48D2B4EBECC00DFAEF2 /* Assets.xcassets */,
 				552BA48F2B4EBECC00DFAEF2 /* Preview Content */,
-				552BA49B2B4EC50100DFAEF2 /* ThingsToDemo.md */,
 			);
 			path = SimpleAni;
 			sourceTree = "<group>";
@@ -92,6 +92,7 @@
 			children = (
 				55B934442B4EE71B004A0E96 /* AnimatedView1.swift */,
 				55B934462B4EE9DF004A0E96 /* AnimatedView2.swift */,
+				569766C82BAB61E8003B86B2 /* AnimatedCardView.swift */,
 				55B9344A2B4EED06004A0E96 /* AnimatedCouponView.swift */,
 				559F0B1C2B4EF58A00D9DD2D /* EnvironmentValues+Namespace.swift */,
 			);
@@ -172,6 +173,7 @@
 				552BA49D2B4EE2DB00DFAEF2 /* View2.swift in Sources */,
 				552BA48C2B4EBEC900DFAEF2 /* View1.swift in Sources */,
 				55B934472B4EE9DF004A0E96 /* AnimatedView2.swift in Sources */,
+				569766C92BAB61E8003B86B2 /* AnimatedCardView.swift in Sources */,
 				552BA4982B4EBF6900DFAEF2 /* CardView.swift in Sources */,
 				552BA49A2B4EC31700DFAEF2 /* CouponView.swift in Sources */,
 				55B934452B4EE71B004A0E96 /* AnimatedView1.swift in Sources */,
